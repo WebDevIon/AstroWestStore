@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollViewStyle"
+    tools:context=".EditorActivity">
+
+    <!-- LinearLayout containing the product details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- LinearLayout containing the image, title, producer and price. -->
+        <LinearLayout style="@style/TopLinearLayoutStyle">
+
+            <Spinner
+                android:id="@+id/product_image_spinner"
+                style="@style/ImageDropdownSpinnerStyle" />
+
+            <LinearLayout style="@style/InfoTextLinearLayoutStyle">
+
+                <EditText
+                    android:id="@+id/name_text_view"
+                    style="@style/NameTextStyle" />
+
+                <EditText
+                    android:id="@+id/producer_text_view"
+                    style="@style/ProducerTextStyle" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DolarSignTextStyle"
+                        android:text="$"/>
+
+                    <EditText
+                        android:id="@+id/price_text_view"
+                        style="@style/PriceTextStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/SpacerStyle" />
+
+        <TextView
+            android:text="@string/specifications_text"
+            style="@style/SpecificationTextViewStyle" />
+
+        <!-- LinearLayout containing the specifications list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- User level category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/user_level_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <LinearLayout style="@style/InputFieldsStyle">
+
+                    <!-- User level drop-down spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_user_level"
+                        style="@style/DropdownSpinnerStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Optical design category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/optical_design_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <LinearLayout style="@style/InputFieldsStyle">
+
+                    <!-- Optical design drop-down spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_optical_design"
+                        style="@style/DropdownSpinnerStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Optical diameter category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/optical_diameter_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <RelativeLayout
+                    style="@style/InputFieldsStyle">
+
+                    <!-- Optical diameter field -->
+                    <EditText
+                        android:id="@+id/edit_optical_diameter"
+                        android:hint="@string/hint_diameter_text"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+
+                    <!-- Units for diameter (mm) -->
+                    <TextView
+                        android:text="@string/telescope_units_text"
+                        style="@style/EditorUnitsStyle"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Focal Lenght category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/focal_length_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <RelativeLayout
+                    style="@style/InputFieldsStyle">
+
+                    <!-- Focal Lenght field -->
+                    <EditText
+                        android:id="@+id/edit_focal_length"
+                        android:hint="@string/hint_focal_length_text"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+
+                    <!-- Units for diameter (mm) -->
+                    <TextView
+                        android:text="@string/telescope_units_text"
+                        style="@style/EditorUnitsStyle"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Mount type category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/mount_type_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <LinearLayout style="@style/InputFieldsStyle">
+
+                    <!-- Mount type drop-down spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_mount_type"
+                        style="@style/DropdownSpinnerStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Contact information category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/contact_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <RelativeLayout
+                    style="@style/InputFieldsStyle">
+
+                    <!-- Focal Lenght field -->
+                    <EditText
+                        android:id="@+id/edit_contact_information"
+                        android:hint="@string/hint_contact_information_text"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Quantity category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/quantity_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <LinearLayout
+                    style="@style/InputFieldsStyle">
+
+                    <!-- Quantity field -->
+                    <TextView
+                        android:id="@+id/quantity_available"
+                        tools:text="10"
+                        style="@style/QuantityEditorFieldStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Modify quantity category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="@string/modify_quantity_text"
+                    style="@style/SpeficifcationsTypeTextStyle" />
+
+                <!-- Input fields -->
+                <RelativeLayout
+                    style="@style/InputFieldsStyle">
+
+                    <!-- Decrease quantity button -->
+                    <Button
+                        android:id="@+id/decrease_quantity_button"
+                        android:text="@string/decrease_quantity_text"
+                        style="@style/DecreaseQuantityButtonsStyle" />
+
+                    <!-- Modify quantity field -->
+                    <EditText
+                        android:id="@+id/edit_quantity"
+                        android:hint="@string/hint_quantity_text"
+                        android:inputType="number"
+                        style="@style/QunatityEditorFieldStyle" />
+
+                    <!-- Increase quantity button -->
+                    <Button
+                        android:id="@+id/increase_quantity_button"
+                        style="@style/IncreaseQuantityButtonsStyle"
+                        android:text="@string/increase_quantity_text"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Order from supplier button -->
+        <FrameLayout style="@style/OrderFrameLayoutStyle">
+
+            <Button
+                android:id="@+id/order_from_supplier_button"
+                android:text="@string/supplier_text"
+                style="@style/CustomButtonStyle" />
+
+        </FrameLayout>
+
+        <!-- Delete product button -->
+        <FrameLayout style="@style/DeleteFrameLayoutStyle">
+
+            <Button
+                android:id="@+id/delete_product_button"
+                android:text="@string/delete_product_text"
+                style="@style/CustomButtonStyle" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

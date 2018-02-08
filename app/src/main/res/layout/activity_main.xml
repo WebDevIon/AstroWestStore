@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainRelativeLayoutStyle"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListViewStyle"/>
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        style="@style/EmptyRelativeLayoutStyle">
+
+        <ImageView
+            android:id="@+id/telescope_image"
+            style="@style/ImageViewStyle"/>
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            style="@style/EmptyTitleStyle"/>
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            style="@style/EmptySubtitleStyle"/>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FabStyle"/>
+
+</RelativeLayout>

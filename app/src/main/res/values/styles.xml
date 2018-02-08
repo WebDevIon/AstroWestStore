@@ -1,0 +1,284 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme of the detail layout. -->
+    <style name="DetailTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/editorColorAccent</item>
+    </style>
+
+    <!-- Main RelativeLayout style in main activity. -->
+    <style name="MainRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/backgroundColor</item>
+    </style>
+
+    <!-- ListView style. -->
+    <style name="ListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Empty RelativeLayout style in main activity. -->
+    <style name="EmptyRelativeLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- ImageView style. -->
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@drawable/telescope</item>
+    </style>
+
+    <!-- Empty title TextView style. -->
+    <style name="EmptyTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/telescope_image</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/empty_title_padding</item>
+        <item name="android:text">@string/empty_view_title_text</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Empty subtitile TextView style. -->
+    <style name="EmptySubtitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/empty_title_text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/empty_subtitle_padding</item>
+        <item name="android:text">@string/empty_view_subtitle_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/subtitleTextColor</item>
+    </style>
+
+    <!-- Floating action button style. -->
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:src">@drawable/telescope_icon</item>
+    </style>
+
+    <!-- Style for the ScrollView in the editor activity. -->
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/editorBackgroundColor</item>
+        <item name="android:padding">@dimen/activity_padding</item>
+    </style>
+
+    <!-- Style for the LinearLayout which contains the picture, name, producer and price in the editor activity. -->
+    <style name="TopLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minHeight">@dimen/min_info_row_height</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the LinearLayout which contains the name, producer and price in the editor activity. -->
+    <style name="InfoTextLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for the name TextView in the editor activity. -->
+    <style name="NameTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/name_text</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the producer TextView in the editor activity. -->
+    <style name="ProducerTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingBottom">@dimen/producer_padding</item>
+        <item name="android:paddingTop">@dimen/producer_padding</item>
+        <item name="android:hint">@string/producer_text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+    </style>
+
+    <!-- Style for the dolar sign TextView in the editor activity. -->
+    <style name="DolarSignTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Style for the price TextView in the editor activity. -->
+    <style name="PriceTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:inputType">number</item>
+        <item name="android:hint">@string/price_text</item>
+        <item name="android:textSize">@dimen/info_text_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Style for the LinearLayout spacer in the editor activity. -->
+    <style name="SpacerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/spacer_height</item>
+        <item name="android:layout_marginBottom">@dimen/spacer_margin</item>
+        <item name="android:layout_marginTop">@dimen/spacer_margin</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Style for the Specifications TextView in the editor activity. -->
+    <style name="SpecificationTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingBottom">@dimen/specifications_text_view_padding</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/specifications_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the TextView's that contains specifications type in the editor activity. -->
+    <style name="SpeficifcationsTypeTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/specifications_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Style for the order from the producer Button in the editor activity. -->
+    <style name="CustomButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the decrease quantity Button's in the editor activity. -->
+    <style name="DecreaseQuantityButtonsStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <!-- Style for the increase quantity Button's in the editor activity. -->
+    <style name="IncreaseQuantityButtonsStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!-- Style for the text views in the list item. -->
+    <style name="ListItemTextViewsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style for the input fields in the editor activity. -->
+    <style name="InputFieldsStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for the dropdown spinners in the editor activity. -->
+    <style name="DropdownSpinnerStyle">
+        <item name="android:layout_height">@dimen/spinner_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingRight">@dimen/spinner_padding</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <!-- Style for the image dropdown spinner in the editor activity. -->
+    <style name="ImageDropdownSpinnerStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minHeight">@dimen/image_spinner_height</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for the quantity EditText field in the editor -->
+    <style name="QuantityEditorFieldStyle">
+        <item name="android:layout_height">@dimen/quantity_edit_text_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for the quantity EditText field in the editor -->
+    <style name="QunatityEditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for the measurement units for an EditText field in the editor -->
+    <style name="EditorUnitsStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/input_padding</item>
+        <item name="android:paddingTop">@dimen/input_padding</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <style name="OrderFrameLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/editorColorAccent</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+    </style>
+
+    <style name="DeleteFrameLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/editorColorPrimary</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+    </style>
+</resources>

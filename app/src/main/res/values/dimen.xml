@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin around the floating action button in MainActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common padding value used throughout the app -->
+    <dimen name="activity_padding">16dp</dimen>
+
+    <!-- Empty title TextView padding -->
+    <dimen name="empty_title_padding">16dp</dimen>
+
+    <!-- Empty subtitle TextView padding -->
+    <dimen name="empty_subtitle_padding">8dp</dimen>
+
+    <!-- Producer TextView padding in the detail activity -->
+    <dimen name="producer_padding">8dp</dimen>
+
+    <!-- Specifications TextView padding in the detail activity -->
+    <dimen name="specifications_text_view_padding">16dp</dimen>
+
+    <!-- Spinner padding in the editor activity -->
+    <dimen name="spinner_padding">16dp</dimen>
+
+    <!-- Input text padding in the editor activity -->
+    <dimen name="input_padding">16dp</dimen>
+
+    <!-- Specifications Spinner height editor activity -->
+    <dimen name="spinner_height">48dp</dimen>
+
+    <!-- Specifications Image Spinner height editor activity -->
+    <dimen name="image_spinner_height">150dp</dimen>
+
+    <!-- Specifications quantity EditText height editor activity -->
+    <dimen name="quantity_edit_text_height">48dp</dimen>
+
+    <!-- Spacer margin in the detail activity -->
+    <dimen name="spacer_margin">8dp</dimen>
+
+    <!-- Button margin in the detail activity -->
+    <dimen name="button_margin">8dp</dimen>
+
+    <!-- Spacer height in the detail activity -->
+    <dimen name="spacer_height">1dp</dimen>
+
+    <!-- Minimum height of the row which contains the picture, name, producer and price in the detail activity -->
+    <dimen name="min_info_row_height">120dp</dimen>
+
+    <!-- Size of the text fot the name, producer and price in the detail activity. -->
+    <dimen name="info_text_size">24sp</dimen>
+
+    <!-- Size of the text for the specifications in the detail activity. -->
+    <dimen name="specifications_text_size">16sp</dimen>
+</resources>

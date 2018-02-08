@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the user level drop-down Spinner -->
+    <string-array name="array_level_options">
+        <item>@string/level_none</item>
+        <item>@string/level_beginner</item>
+        <item>@string/level_intermediate</item>
+        <item>@string/level_advanced</item>
+    </string-array>
+
+    <!-- These are the options displayed in the optical design drop-down Spinner -->
+    <string-array name="array_design_options">
+        <item>@string/design_none</item>
+        <item>@string/design_reflector</item>
+        <item>@string/design_refractor</item>
+    </string-array>
+
+    <!-- These are the options displayed in the mount type drop-down Spinner -->
+    <string-array name="array_mount_options">
+        <item>@string/mount_none</item>
+        <item>@string/mount_dobson</item>
+        <item>@string/mount_equatorial</item>
+        <item>@string/mount_azimuthal</item>
+    </string-array>
+</resources>
